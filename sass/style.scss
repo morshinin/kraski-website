@@ -1,0 +1,51 @@
+/**
+* -----------------------------------------------------------
+* style.scss
+*
+* Kraski zdes website
+
+Author: Mikhail Morshinin
+* -----------------------------------------------------------
+*/
+
+/* Compass */
+@import "compass";
+
+/* Susy */
+@import "susy";
+
+/* Icons sprites */
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+/* Utilities */
+@import "utilities/settings";
+@import "utilities/utilities";
+
+/* Bootstrap */
+/* @import "bootstrap/bootstrap"; */
+
+/* Base */
+@import "base/normalize";
+@import "base/base";
+@import "base/ie8";
+
+/* Fonts */
+// @import "fonts/font-name";
+
+/* Layout */
+@import "layout/nav";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+/* Modules */
+@import "module/btn";
+@import "module/dividers";
+@import "module/forms";
+@import "module/tables";
+@import "module/misc";
+
+/* Theme */
+@import "theme/theme";
