@@ -553,6 +553,10 @@ html {
   background-position: top center; */
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 940px;
   margin-left: auto;
@@ -570,30 +574,80 @@ html {
 * -----------------------------------------------------------
 */
 /* Fonts */
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url('../fonts/OpenSans-Regular.ttf?1305116204') format('truetype');
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url('../fonts/OpenSans-Light.ttf?1305116206') format('truetype');
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url('../fonts/OpenSans-Semibold.ttf?1305116202') format('truetype');
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url('../fonts/OpenSans-Bold.ttf?1305116216') format('truetype');
+}
 /* Layout */
 /**
 * -----------------------------------------------------------
 * Nav styles
 * -----------------------------------------------------------
 */
+.l-main-nav-bar,
+.l-nav-secondary,
+.l-brand-list {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+
 /**
 * -----------------------------------------------------------
 * Header styles
 * -----------------------------------------------------------
 */
-/* .l-main-contact-info {
-  @include span(7 of 12);
+.l-main-contact-info {
+  width: 57.44681%;
+  float: left;
+  margin-right: 2.12766%;
 }
 
 .l-search-form {
-  @include span(5 last);
+  width: 40.42553%;
+  float: right;
+  margin-right: 0;
 }
- */
+
 /**
 * -----------------------------------------------------------
 * Main styles
 * -----------------------------------------------------------
 */
+.l-span-6, .l-company-info {
+  width: 48.93617%;
+  float: left;
+  margin-right: 2.12766%;
+}
+.l-span-6:last-child, .l-company-info:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.l-social,
+.l-payment-info {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+}
+.l-social:last-child,
+.l-payment-info:last-child {
+  float: right;
+  margin-right: 0;
+}
+
 /**
 * -----------------------------------------------------------
 * Footer styles.
@@ -613,9 +667,9 @@ html {
 hr {
   display: block;
   height: 1px;
-  margin: 48px 0;
+  margin: 42px 0;
   border: none;
-  background-color: #eee;
+  /* background-color: $color-hr; */
 }
 
 /**

@@ -5,8 +5,11 @@
 */
 
 /* Typography */
-$base-font-size: 16px;
-$font-1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size: 14px;
+$font-1: "OpenSans-Regular", Arial, sans-serif;
+$font-2: "OpenSans-Light", Arial, sans-serif;
+$font-3: "OpenSans-Semibold", Arial, sans-serif;
+$font-4: "OpenSans-Bold", Arial, sans-serif;
 
 $baseline: $base-font-size * 1.5;
 
@@ -14,16 +17,14 @@ $baseline: $base-font-size * 1.5;
 $color-link: #4183c4;
 $color-link-hover: #333;
 
-$color-text: #333;
-$color-light-text: #777;
+$color-text: #1a1a1a;
+$color-light-text: #455a64;
 
-$color-hr: #eee;
+$color-dark: #333;
+$color-inverted: #fff;
 
-$color-1: #4183c4;
-$color-2: #efefef;
-
-$color-validation-error: red;
-$color-validation-success: green;
+$color-form-text: #78909c;
+$color-highlight: #e5097f;
 
 /* Positioning */
 /* *, *:before, *:after {

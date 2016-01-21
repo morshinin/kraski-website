@@ -4,6 +4,8 @@
 * -----------------------------------------------------------
 */
 
-.l-nav {
-  
+.l-main-nav-bar,
+.l-nav-secondary,
+.l-brand-list {
+  @include span(12 last);
 }

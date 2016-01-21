@@ -9,6 +9,10 @@ html {
 background-position: top center; */
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   @include container;
   @include show-grid(overlay);

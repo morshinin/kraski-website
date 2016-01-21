@@ -4,6 +4,21 @@
 * -----------------------------------------------------------
 */
 
-.l-main {
-  
+.l-span-6 {
+  @include span(6 of 12);
+  &:last-child {
+    @include last;
+  }
+}
+
+.l-company-info {
+  @extend .l-span-6;
+}
+
+.l-social,
+.l-payment-info {
+  @include span(3 of 12);
+  &:last-child {
+    @include last;
+  }
 }

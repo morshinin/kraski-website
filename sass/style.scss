@@ -32,7 +32,10 @@ Author: Mikhail Morshinin
 @import "base/ie8";
 
 /* Fonts */
-// @import "fonts/font-name";
+@include font-face("OpenSans-Regular", font-files("OpenSans-Regular.ttf"));
+@include font-face("OpenSans-Light", font-files("OpenSans-Light.ttf"));
+@include font-face("OpenSans-Semibold", font-files("OpenSans-Semibold.ttf"));
+@include font-face("OpenSans-Bold", font-files("OpenSans-Bold.ttf"));
 
 /* Layout */
 @import "layout/nav";
