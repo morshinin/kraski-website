@@ -5,5 +5,13 @@
 */
 
 .l-header {
-  
+
+}
+
+.l-main-contact-info {
+  @include span(7 of 12);
+}
+
+.l-search-form {
+  @include span(5 last);
 }

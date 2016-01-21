@@ -548,6 +548,11 @@ th {
 * Base styles
 * -------------------------------------------
 */
+html {
+  /*   background-image: url('../images/kraski-home.jpg');
+  background-position: top center; */
+}
+
 .container {
   max-width: 940px;
   margin-left: auto;
@@ -576,6 +581,18 @@ th {
 * Header styles
 * -----------------------------------------------------------
 */
+.l-main-contact-info {
+  width: 57.44681%;
+  float: left;
+  margin-right: 2.12766%;
+}
+
+.l-search-form {
+  width: 40.42553%;
+  float: right;
+  margin-right: 0;
+}
+
 /**
 * -----------------------------------------------------------
 * Main styles

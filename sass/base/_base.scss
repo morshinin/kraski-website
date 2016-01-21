@@ -4,6 +4,12 @@
 * -------------------------------------------
 */
 
+html {
+/*   background-image: url('../images/kraski-home.jpg');
+background-position: top center; */
+}
+
 .container {
   @include container;
+  @include show-grid(overlay);
 }
