@@ -10,79 +10,11 @@ Author: Mikhail Morshinin
 /* Compass */
 /* Susy */
 /* Icons sprites */
-.icons-sprite, .icons-arrow-right-icon, .icons-cart-icon, .icons-dulux-logo, .icons-envelope-icon, .icons-facebook-logo, .icons-kraski-zdes-logo, .icons-mapei-logo, .icons-phone-icon, .icons-pinotex-logo, .icons-search-icon, .icons-tekc-logo, .icons-tikkurila-logo, .icons-tytan-logo, .icons-visa-mastercard-logo, .icons-vkontakte-logo, .icons-watch-icon, .icons-youtube-logo {
-  background-image: url('../images/icons-sa9cd3dd9e9.png');
-  background-repeat: no-repeat;
-}
+/* @import "compass/utilities/sprites";
+@import "icons.png";
+@include all-icons-sprites;
 
-.icons-arrow-right-icon {
-  background-position: 0 0;
-}
-
-.icons-cart-icon {
-  background-position: 0 -18px;
-}
-
-.icons-dulux-logo {
-  background-position: 0 -38px;
-}
-
-.icons-envelope-icon {
-  background-position: 0 -80px;
-}
-
-.icons-facebook-logo {
-  background-position: 0 -89px;
-}
-
-.icons-kraski-zdes-logo {
-  background-position: 0 -119px;
-}
-
-.icons-mapei-logo {
-  background-position: 0 -188px;
-}
-
-.icons-phone-icon {
-  background-position: 0 -212px;
-}
-
-.icons-pinotex-logo {
-  background-position: 0 -224px;
-}
-
-.icons-search-icon {
-  background-position: 0 -275px;
-}
-
-.icons-tekc-logo {
-  background-position: 0 -292px;
-}
-
-.icons-tikkurila-logo {
-  background-position: 0 -319px;
-}
-
-.icons-tytan-logo {
-  background-position: 0 -364px;
-}
-
-.icons-visa-mastercard-logo {
-  background-position: 0 -404px;
-}
-
-.icons-vkontakte-logo {
-  background-position: 0 -429px;
-}
-
-.icons-watch-icon {
-  background-position: 0 -459px;
-}
-
-.icons-youtube-logo {
-  background-position: 0 -480px;
-}
-
+$height-phone-icon: icons-sprite-height(phone-icon); */
 /* Utilities */
 /**
 * -----------------------------------------------------------
@@ -548,9 +480,17 @@ th {
 * Base styles
 * -------------------------------------------
 */
-html {
-  /*   background-image: url('../images/kraski-home.jpg');
+html,
+ul {
+  /* background-image: url('../images/kraski-home.jpg');
   background-position: top center; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -609,16 +549,58 @@ a {
 * Header styles
 * -----------------------------------------------------------
 */
-.l-main-contact-info {
+.l-header {
+  padding: 0.7rem 0;
+  margin-bottom: 30px;
+}
+
+.l-span-7 {
   width: 57.44681%;
   float: left;
   margin-right: 2.12766%;
+}
+.l-span-7 a {
+  color: #1a1a1a;
 }
 
 .l-search-form {
   width: 40.42553%;
   float: right;
   margin-right: 0;
+}
+
+.l-main-contact {
+  margin: 0;
+  list-style-type: none;
+}
+.l-main-contact li {
+  float: left;
+  /* background-position: -16px -459px; */
+}
+.l-main-contact li:nth-of-type(1) {
+  padding-left: 29px;
+  padding-right: 43px;
+  padding-bottom: 5px;
+  background-image: url("../images/icons/watch-icon.png");
+  background-repeat: no-repeat;
+}
+.l-main-contact li:nth-of-type(2) {
+  padding-left: 22px;
+  padding-right: 38px;
+  background-image: url("../images/icons/phone-icon.png");
+  background-position-y: 4px;
+  background-repeat: no-repeat;
+}
+.l-main-contact li:last-child {
+  padding-left: 24px;
+  padding-right: 0;
+  background-image: url("../images/icons/envelope-icon.png");
+  background-repeat: no-repeat;
+}
+
+.l-search-form {
+  margin: 0;
+  padding-left: 40px;
 }
 
 /**
@@ -653,6 +635,30 @@ a {
 * Footer styles.
 * -----------------------------------------------------------
 */
+.l-shop-adress {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+
+.l-span-1 {
+  width: 6.38298%;
+  float: left;
+  margin-right: 2.12766%;
+}
+
+.l-span-3 {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+}
+
+.l-span-8 {
+  width: 65.95745%;
+  float: right;
+  margin-right: 0;
+}
+
 /* Modules */
 /**
 * -----------------------------------------------------------

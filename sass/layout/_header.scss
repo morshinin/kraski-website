@@ -5,13 +5,61 @@
 */
 
 .l-header {
-
+  padding: 0.7rem 0;
+  margin-bottom: 30px;
 }
 
-.l-main-contact-info {
+.l-span-7 {
   @include span(7 of 12);
+
+  a {
+    color: $color-text;
+  }
 }
 
 .l-search-form {
   @include span(5 last);
+}
+
+.l-main-contact {
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    @include float-left;
+
+    &:nth-of-type(1) {
+      padding-left: 29px;
+      padding-right: 43px;
+      padding-bottom: 5px;
+
+      background-image: url("../images/icons/watch-icon.png");
+      background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 22px;
+      padding-right: 38px;
+
+      background-image: url("../images/icons/phone-icon.png");
+      background-position-y: 4px;
+      background-repeat: no-repeat;
+    }
+
+    &:last-child {
+      padding-left: 24px;
+      padding-right: 0;
+
+      background-image: url("../images/icons/envelope-icon.png");
+      background-repeat: no-repeat;
+    }
+
+      /* background-position: -16px -459px; */
+
+  }
+}
+
+.l-search-form {
+  margin: 0;
+  padding-left: 40px;
 }
