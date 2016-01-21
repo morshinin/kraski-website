@@ -581,18 +581,14 @@ html {
 * Header styles
 * -----------------------------------------------------------
 */
-.l-main-contact-info {
-  width: 57.44681%;
-  float: left;
-  margin-right: 2.12766%;
+/* .l-main-contact-info {
+  @include span(7 of 12);
 }
 
 .l-search-form {
-  width: 40.42553%;
-  float: right;
-  margin-right: 0;
+  @include span(5 last);
 }
-
+ */
 /**
 * -----------------------------------------------------------
 * Main styles
