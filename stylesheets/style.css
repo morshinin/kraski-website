@@ -9,12 +9,6 @@ Author: Mikhail Morshinin
 */
 /* Compass */
 /* Susy */
-/* Icons sprites */
-/* @import "compass/utilities/sprites";
-@import "icons.png";
-@include all-icons-sprites;
-
-$height-phone-icon: icons-sprite-height(phone-icon); */
 /* Utilities */
 /**
 * -----------------------------------------------------------
@@ -542,9 +536,38 @@ input[type="text"] {
 * Nav styles
 * -----------------------------------------------------------
 */
-.l-main-nav-bar,
-.l-nav-secondary,
-.l-brand-list {
+.l-main-nav-bar {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  background-color: #333;
+}
+.l-main-nav-bar ul {
+  /* @include horizontal-list-container; */
+}
+.l-main-nav-bar ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.l-main-nav-bar ul li:first-child {
+  padding-left: 0;
+}
+.l-main-nav-bar ul li:last-child {
+  padding-right: 0;
+}
+.l-main-nav-bar ul li.last {
+  padding-right: 0;
+}
+
+.l-nav-secondary {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -609,6 +632,7 @@ input[type="text"] {
   float: right;
   margin-right: 0;
   margin: 0;
+  padding-top: 10px;
   padding-left: 40px;
 }
 
@@ -617,6 +641,12 @@ input[type="text"] {
 * Main styles
 * -----------------------------------------------------------
 */
+.l-brand-list {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+
 .l-span-6, .l-company-info {
   width: 48.93617%;
   float: left;

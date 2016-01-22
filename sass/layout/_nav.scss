@@ -3,9 +3,23 @@
 * Nav styles
 * -----------------------------------------------------------
 */
+.l-main-nav-bar {
+  //  layout styles for main menu
+  @include span(12 last); //  takes all columns
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 16px;
 
-.l-main-nav-bar,
-.l-nav-secondary,
-.l-brand-list {
+  background-color: #333;
+
+  ul {
+    /* @include horizontal-list-container; */
+
+    li {
+      @include horizontal-list-item;
+    }
+  }
+}
+.l-nav-secondary {
   @include span(12 last);
 }

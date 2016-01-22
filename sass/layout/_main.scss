@@ -4,6 +4,10 @@
 * -----------------------------------------------------------
 */
 
+.l-brand-list {
+  @include span(12 last);
+}
+
 .l-span-6 {
   @include span(6 of 12);
   &:last-child {

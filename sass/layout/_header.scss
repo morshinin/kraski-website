@@ -43,8 +43,9 @@
   }
 }
 /* Search box styling */
-.l-search-form {          // aligning the search box
+.l-search-form {          // positioning the search box
   @include span(5 last);
   margin: 0;
+  padding-top: 10px;    //  vertical align with the contact menu
   padding-left: 40px;
 }
