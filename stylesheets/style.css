@@ -540,37 +540,53 @@ input[type="text"] {
   width: 100%;
   float: right;
   margin-right: 0;
-  padding-top: 14px;
-  padding-bottom: 16px;
-  padding-left: 16px;
+  padding: 14px 0 16px 16px;
+  margin: 15px 0 11px 0;
   background-color: #333;
 }
-.l-main-nav-bar ul {
-  /* @include horizontal-list-container; */
+.l-main-nav-bar > ul {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 35px;
 }
-.l-main-nav-bar ul li {
+.l-main-nav-bar > ul > li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   white-space: nowrap;
-  float: left;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.l-main-nav-bar ul li:first-child {
-  padding-left: 0;
-}
-.l-main-nav-bar ul li:last-child {
-  padding-right: 0;
-}
-.l-main-nav-bar ul li.last {
-  padding-right: 0;
+.l-main-nav-bar > ul li + li {
+  background: url(../images/icons/nav-divider.png) no-repeat top left;
 }
 
 .l-nav-secondary {
   width: 100%;
   float: right;
   margin-right: 0;
+  padding: 11px 0;
+}
+.l-nav-secondary > ul {
+  display: inline-block;
+}
+.l-nav-secondary > ul > li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /**
@@ -584,7 +600,7 @@ input[type="text"] {
   float: left;
   margin-right: 2.12766%;
   padding-top: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .l-span-7 a {
   color: #1a1a1a;

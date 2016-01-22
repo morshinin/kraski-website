@@ -8,7 +8,7 @@
 .l-span-7 {    //  set grid for contact information list
   @include span(7 of 12);    //  susy mixin takes 7 of 12 columns
   padding-top: $base-font-size;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   a {
     color: $color-text;
   }

@@ -3,23 +3,41 @@
 * Nav styles
 * -----------------------------------------------------------
 */
-.l-main-nav-bar {
-  //  layout styles for main menu
-  @include span(12 last); //  takes all columns
-  padding-top: 14px;
-  padding-bottom: 16px;
-  padding-left: 16px;
+.l-main-nav-bar {    //  layout styles for main menu
+  @include span(12 last); //  navbar takes all columns(susy mixin)
+  padding: 14px 0 16px 16px;
+  margin: 15px 0 11px 0;    //  15px from main contact above and 11px from secondary nav below
 
   background-color: #333;
 
-  ul {
-    /* @include horizontal-list-container; */
+  >ul {
+    display: inline-block;
 
-    li {
-      @include horizontal-list-item;
+    margin-top: 16px;
+    margin-left: 35px;    //  margin from logo image
+
+    >li {
+      @include inline-block-list-item(10px);    //  compass mixin
+    }
+
+    li + li {
+      background: url(../images/icons/nav-divider.png) no-repeat top left;
     }
   }
 }
 .l-nav-secondary {
-  @include span(12 last);
+  @include span(12 last);    //  susy mixin
+
+  padding: 11px 0;
+
+  >ul {
+    display: inline-block;
+
+    >li {
+      @include inline-block-list-item(20px);
+    }
+  }
 }
+
+
+// todo - set dividers right, set margin and padding
