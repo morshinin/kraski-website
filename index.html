@@ -18,6 +18,26 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+<!-- Heads up grid for vertical rythm -->
+  <link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+<script src="headsupgrid/jquery-1.6.2.min.js"></script>
+<script src="headsupgrid/hugrid.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        pageUnits = 'px';
+        colUnits = 'px';
+        pagewidth = 940;
+        columns = 12;
+        columnwidth = 60;
+        gutterwidth = 20;
+        pagetopmargin = 0;
+        rowheight = 10;
+        gridonload = 'on';
+        makehugrid();
+        setgridonload();
+    });
+</script>
+
 </head>
 <body>
 
