@@ -483,7 +483,8 @@ th {
 html,
 ul {
   /* background-image: url('../images/kraski-home.jpg');
-  background-position: top center; */
+background-position: top center;
+background-repeat: no-repeat; */
   margin: 0;
   padding: 0;
 }
@@ -495,6 +496,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+input[type="submit"],
+input[type="text"] {
+  line-height: normal !important;
 }
 
 .container {
@@ -549,19 +555,16 @@ a {
 * Header styles
 * -----------------------------------------------------------
 */
+/* Contact information menu */
 .l-span-7 {
   width: 57.44681%;
   float: left;
   margin-right: 2.12766%;
+  padding-top: 14px;
+  margin-bottom: 30px;
 }
 .l-span-7 a {
   color: #1a1a1a;
-}
-
-.l-search-form {
-  width: 40.42553%;
-  float: right;
-  margin-right: 0;
 }
 
 .l-main-contact {
@@ -570,30 +573,41 @@ a {
 }
 .l-main-contact li {
   float: left;
-  /* background-position: -16px -459px; */
 }
 .l-main-contact li:nth-of-type(1) {
   padding-left: 29px;
   padding-right: 43px;
-  padding-bottom: 5px;
-  background-image: url("../images/icons/watch-icon.png");
+  padding-bottom: 7px;
+  background-image: url(../images/icons/watch-icon.png);
   background-repeat: no-repeat;
 }
 .l-main-contact li:nth-of-type(2) {
   padding-left: 22px;
-  padding-right: 38px;
-  background-image: url("../images/icons/phone-icon.png");
+  padding-right: 65px;
+  background-image: url(../images/icons/phone-icon.png);
   background-position-y: 4px;
   background-repeat: no-repeat;
 }
 .l-main-contact li:last-child {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-left: 24px;
   padding-right: 0;
-  background-image: url("../images/icons/envelope-icon.png");
+  background-image: url(../images/icons/envelope-icon.png);
+  background-position-y: 7px;
   background-repeat: no-repeat;
 }
 
+/* Search box styling */
 .l-search-form {
+  width: 40.42553%;
+  float: right;
+  margin-right: 0;
   margin: 0;
   padding-left: 40px;
 }

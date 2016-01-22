@@ -3,62 +3,48 @@
 * Header styles
 * -----------------------------------------------------------
 */
-
-.l-header {
-
-}
-
-.l-span-7 {
-  @include span(7 of 12);
-
+.l-header {}
+/* Contact information menu */
+.l-span-7 {    //  set grid for contact information list
+  @include span(7 of 12);    //  susy mixin takes 7 of 12 columns
+  padding-top: $base-font-size;
+  margin-bottom: 30px;
   a {
     color: $color-text;
   }
 }
-
-.l-search-form {
-  @include span(5 last);
-}
-
-.l-main-contact {
+.l-main-contact {    //  contact information list
   margin: 0;
   list-style-type: none;
-
   li {
     @include float-left;
-
-    &:nth-of-type(1) {
+    &:nth-of-type(1) {    // positioning the first item of the contact info
       padding-left: 29px;
       padding-right: 43px;
-      padding-bottom: 5px;
-
-      background-image: url("../images/icons/watch-icon.png");
+      padding-bottom: 7px;
+      background-image: url(../images/icons/watch-icon.png);
       background-repeat: no-repeat;
     }
-
-    &:nth-of-type(2) {
+    &:nth-of-type(2) {    // positioning of the second item
       padding-left: 22px;
-      padding-right: 38px;
-
-      background-image: url("../images/icons/phone-icon.png");
+      padding-right: 65px;
+      background-image: url(../images/icons/phone-icon.png);
       background-position-y: 4px;
       background-repeat: no-repeat;
     }
-
-    &:last-child {
+    &:last-child {      // positioning last item of the contact list
+      @include bleed-x(20px);
       padding-left: 24px;
       padding-right: 0;
-
-      background-image: url("../images/icons/envelope-icon.png");
+      background-image: url(../images/icons/envelope-icon.png);
+      background-position-y: 7px;
       background-repeat: no-repeat;
     }
-
-      /* background-position: -16px -459px; */
-
   }
 }
-
-.l-search-form {
+/* Search box styling */
+.l-search-form {          // aligning the search box
+  @include span(5 last);
   margin: 0;
   padding-left: 40px;
 }

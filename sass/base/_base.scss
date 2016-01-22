@@ -3,25 +3,26 @@
 * Base styles
 * -------------------------------------------
 */
-
 html,
 ul {
-/* background-image: url('../images/kraski-home.jpg');
-background-position: top center; */
-margin: 0;
-padding: 0;
+  /* background-image: url('../images/kraski-home.jpg');
+background-position: top center;
+background-repeat: no-repeat; */
+  margin: 0;
+  padding: 0;
 }
-
 body {
   font-family: $font-1;
   font-size: $base-font-size;
 }
-
 a {
   text-decoration: none;
 }
-
-.container {
+input[type="submit"],    //  makes button and text input same height in all browsers
+input[type="text"] {
+  line-height: normal !important;
+}
+.container {    //  susy set the container width
   @include container;
   @include show-grid(overlay);
 }
