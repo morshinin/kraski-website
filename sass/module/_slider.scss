@@ -1,0 +1,84 @@
+/**
+* -----------------------------------------------------------
+* Slider styles
+* -----------------------------------------------------------
+*/
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40px;
+  border: 1px solid $color-hr;
+}
+.slider::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  content: '';
+  display: block;
+  background: #333;
+  height: 48px;
+}
+.slide-switch {
+  display: none;
+}
+
+
+@mixin slide-label-position {
+  $k:0;
+  @for $i from 1 through 5 {
+  &:nth-of-type(#{$i}) {
+      left: 0 + $k;
+      $k: $k + 2.5rem;
+    }
+  }
+}
+
+.slide-label {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  display: block;
+  z-index: 5;
+  height: 1rem;
+  width: 1rem;
+  text-indent: 1rem;
+  overflow: hidden;
+  background: $color-hr;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s;
+  @include slide-label-position;
+}
+
+.slide-content {
+  width: 100%;
+  background: #fff;
+  float: left;
+  margin-right: -100%;
+}
+.slide-switch:checked + .slide-label {
+  background: $color-highlight;
+}
+.slide-switch:not(:checked) + .slide-label + .slide-content {
+  opacity: 0;
+  transition: opacity 0.35s;
+  pointer-events: none;
+}
+.slide-switch:checked + .slide-label + .slide-content {
+  animation: slide 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

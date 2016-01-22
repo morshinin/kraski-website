@@ -26,10 +26,9 @@ $color-inverted: #fff;
 $color-form-text: #78909c;
 $color-highlight: #e5097f;
 
+$color-hr: #f1f3f5;
+
 /* Positioning */
-/* *, *:before, *:after {
-  @include box-sizing(border-box);
-} */
 $susy: (
   columns: 12,
   container: 940px,

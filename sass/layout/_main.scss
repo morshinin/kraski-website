@@ -3,22 +3,63 @@
 * Main styles
 * -----------------------------------------------------------
 */
+/* SLIDE STYLES */
+.slide-wrapper {
+  position: relative;
+}
+.l-image-well {
+  //  position slide image
+  width: 187px;
+  height: 174px;
+  margin: 40px 45px 59px 40px;
+  @include float-left;
+}
+.l-text-well {
+  //  position slide text
+  width: 430px;
+  margin: 22px 0 0 30px;
+  @include float-left;
+  h1 {
+    //  slide header
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  p {
+    //  slide text
+    font-size: 13px;
+    font-family: $font-2;
+    line-height: 20px;
+  }
+}
+.l-price-tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 107px 337px;
+  border-color: transparent transparent $color-highlight transparent;
 
+  p {
+    position: relative;
+    width: 200px;
+    left: -140px;
+    top: 60px;
+  }
+}
 .l-brand-list {
   @include span(12 last);
 }
-
 .l-span-6 {
   @include span(6 of 12);
   &:last-child {
     @include last;
   }
 }
-
 .l-company-info {
   @extend .l-span-6;
 }
-
 .l-social,
 .l-payment-info {
   @include span(3 of 12);
