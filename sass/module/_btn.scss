@@ -5,5 +5,20 @@
 */
 
 .btn {
-  
+  display: block;
+  padding: 38px 13px;
+  margin: 10px 0;
+  position: relative;
+  text-align: center;
+  background: $color-hr;
+  span {    //  square inside button
+    padding: 26px;
+    background: $color-text;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  &:hover span {
+    background: $color-highlight;
+  }
 }

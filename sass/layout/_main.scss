@@ -26,61 +26,35 @@
   }
   p {
     //  slide text
-    font-size: 13px;
-    font-family: $font-2;
-    line-height: 20px;
+    @extend %text-info;  //  sass placeholder selector look at _base.scss
   }
 }
-.l-price-tag {  //  price on the slider bottom right
+.l-price-tag {
+  //  price on the slider bottom right
   position: absolute;
   bottom: 0;
   right: 0;
   width: 0;
   height: 0;
-  border-style: solid;  // make triangle
+  border-style: solid; // make triangle
   border-width: 0 0 107px 337px;
   border-color: transparent transparent $color-highlight transparent;
-
-  p {  // set text of the tag visible
+  p {
+    // set text of the tag visible
     position: relative;
     width: 200px;
     left: -140px;
     top: 60px;
   }
 }
-@mixin brand-margin {
-  @each $brand-margin in 70, 85, 66, 45 {
-    li {
-      margin-right: $brand-margin + px;
-    }
-  }
-}
-
+/* LIST OF BRANDS */
 .l-brand-list {
-  @include span(12 last);
+  @include span(12 last); //  susy mixin
   ul {
-    /* display: inline-block;
-    margin: 0 auto; */
-
+    margin-left: 56px;
     li {
-      @include inline-block-list-item(20px);
+      @include inline-block-list-item; //  compass mixin
     }
-    @include brand-margin;
-  }
-}
-.l-span-6 {
-  @include span(6 of 12);
-  &:last-child {
-    @include last;
-  }
-}
-.l-company-info {
-  @extend .l-span-6;
-}
-.l-social,
-.l-payment-info {
-  @include span(3 of 12);
-  &:last-child {
-    @include last;
+    @include list-item-right-margin(5, 80, 80, 90, 67, 70); //  you find this mixin in the _utilities.scss
   }
 }

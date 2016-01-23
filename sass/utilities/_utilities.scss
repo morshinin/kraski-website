@@ -27,3 +27,14 @@
 .clearfix {
   @include clearfix;
 }
+
+
+@mixin list-item-right-margin($list-items, $margins...) {  //  mixin for setting different right margins for items in a list
+  li {
+    @for $i from 1 through $list-items {
+      &:nth-of-type(#{$i}) {
+        margin-right: nth($margins, $i) + px;
+      }
+    }
+  }
+}

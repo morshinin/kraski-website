@@ -487,6 +487,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #4183c4;
 }
 
 h1 {
@@ -499,7 +500,7 @@ input[type="text"] {
 }
 
 .container {
-  max-width: 940px;
+  width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -507,6 +508,23 @@ input[type="text"] {
   content: " ";
   display: block;
   clear: both;
+}
+
+.l-text-well p, .l-company-info p {
+  font-size: 13px;
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  line-height: 20px;
+}
+
+.l-company-info p strong, .l-social li a {
+  font-family: "OpenSans-Semibold", Arial, sans-serif;
+  font-size: 16px;
+  color: #191919;
+}
+
+.l-social li:nth-of-type(1), .l-social li:nth-of-type(2), .l-social li:nth-of-type(3) {
+  padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 /**
@@ -538,7 +556,7 @@ input[type="text"] {
 * -----------------------------------------------------------
 */
 .l-main-nav-bar {
-  width: 100%;
+  width: 940px;
   float: right;
   margin-right: 0;
   padding: 14px 0 16px 16px;
@@ -568,7 +586,7 @@ input[type="text"] {
 }
 
 .l-nav-secondary {
-  width: 100%;
+  width: 940px;
   float: right;
   margin-right: 0;
   padding: 11px 0;
@@ -597,9 +615,9 @@ input[type="text"] {
 */
 /* Contact information menu */
 .l-span-7 {
-  width: 57.44681%;
+  width: 540px;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 20px;
   padding-top: 14px;
   margin-bottom: 15px;
 }
@@ -645,7 +663,7 @@ input[type="text"] {
 
 /* Search box styling */
 .l-search-form {
-  width: 40.42553%;
+  width: 380px;
   float: right;
   margin-right: 0;
   margin: 0;
@@ -679,11 +697,6 @@ input[type="text"] {
   font-size: 24px;
   text-transform: uppercase;
 }
-.l-text-well p {
-  font-size: 13px;
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  line-height: 20px;
-}
 
 .l-price-tag {
   position: absolute;
@@ -702,14 +715,14 @@ input[type="text"] {
   top: 60px;
 }
 
+/* LIST OF BRANDS */
 .l-brand-list {
-  width: 100%;
+  width: 940px;
   float: right;
   margin-right: 0;
 }
 .l-brand-list ul {
-  /* display: inline-block;
-  margin: 0 auto; */
+  margin-left: 56px;
 }
 .l-brand-list ul li {
   list-style-image: none;
@@ -721,42 +734,78 @@ input[type="text"] {
   *zoom: 1;
   *display: inline;
   white-space: nowrap;
-  padding-left: 20px;
-  padding-right: 20px;
 }
-.l-brand-list ul li {
+.l-brand-list ul li:nth-of-type(1) {
+  margin-right: 80px;
+}
+.l-brand-list ul li:nth-of-type(2) {
+  margin-right: 80px;
+}
+.l-brand-list ul li:nth-of-type(3) {
+  margin-right: 90px;
+}
+.l-brand-list ul li:nth-of-type(4) {
+  margin-right: 67px;
+}
+.l-brand-list ul li:nth-of-type(5) {
   margin-right: 70px;
 }
-.l-brand-list ul li {
-  margin-right: 85px;
-}
-.l-brand-list ul li {
-  margin-right: 66px;
-}
-.l-brand-list ul li {
-  margin-right: 45px;
-}
 
-.l-span-6, .l-company-info {
-  width: 48.93617%;
+/**
+* -----------------------------------------------------------
+* Catalogue styles
+* -----------------------------------------------------------
+*/
+.l-catalogue li {
+  width: 460.0px;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 20px;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
 }
-.l-span-6:last-child, .l-company-info:last-child {
+.l-catalogue li:last-child {
   float: right;
   margin-right: 0;
 }
 
-.l-social,
-.l-payment-info {
-  width: 23.40426%;
+.l-company-info {
+  width: 460.0px;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 20px;
 }
-.l-social:last-child,
-.l-payment-info:last-child {
+.l-company-info:last-child {
   float: right;
   margin-right: 0;
+}
+
+.l-social, .l-payment-info {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+.l-social:last-child, .l-payment-info:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.l-social li {
+  list-style-type: none;
+}
+.l-social li:nth-of-type(1) {
+  background: url(../images/icons/social/youtube-logo.png) no-repeat;
+}
+.l-social li:nth-of-type(2) {
+  background: url(../images/icons/social/vkontakte-logo.png) no-repeat;
+}
+.l-social li:nth-of-type(3) {
+  background: url(../images/icons/social/facebook-logo.png) no-repeat;
 }
 
 /**
@@ -765,25 +814,25 @@ input[type="text"] {
 * -----------------------------------------------------------
 */
 .l-shop-adress {
-  width: 100%;
+  width: 940px;
   float: right;
   margin-right: 0;
 }
 
 .l-span-1 {
-  width: 6.38298%;
+  width: 60px;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 20px;
 }
 
 .l-span-3 {
-  width: 23.40426%;
+  width: 220px;
   float: left;
-  margin-right: 2.12766%;
+  margin-right: 20px;
 }
 
 .l-span-8 {
-  width: 65.95745%;
+  width: 620.0px;
   float: right;
   margin-right: 0;
 }
@@ -794,6 +843,25 @@ input[type="text"] {
 * Button styles
 * -----------------------------------------------------------
 */
+.btn {
+  display: block;
+  padding: 38px 13px;
+  margin: 10px 0;
+  position: relative;
+  text-align: center;
+  background: #f1f3f5;
+}
+.btn span {
+  padding: 26px;
+  background: #1a1a1a;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.btn:hover span {
+  background: #e5097f;
+}
+
 /**
 * -----------------------------------------------------------
 * Divider styles

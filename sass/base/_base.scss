@@ -17,6 +17,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: $color-link;
 }
 
 h1 {
@@ -30,4 +31,21 @@ input[type="text"] {
 .container {    //  susy set the container width
   @include container;
   @include show-grid(overlay);
+}
+
+%text-info {    //  placeholder for text snippet(used in slider and company info)
+  font-size: 13px;
+  font-family: $font-2;
+  line-height: 20px;
+}
+
+%strong-text {    //  placeholder for strong text(used in company info and social sections)
+  font-family: $font-3;
+  font-size: 16px;
+  color: $color-strong-text;
+}
+
+%padding-for-list-items {    //  placeholder for padding used by list items in social section
+  padding-left: 30px;
+  padding-bottom: 10px;
 }

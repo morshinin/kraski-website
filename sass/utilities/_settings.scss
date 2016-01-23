@@ -19,6 +19,7 @@ $color-link-hover: #333;
 
 $color-text: #1a1a1a;
 $color-light-text: #455a64;
+$color-strong-text: #191919;
 
 $color-dark: #333;
 $color-inverted: #fff;
@@ -29,10 +30,13 @@ $color-highlight: #e5097f;
 $color-hr: #f1f3f5;
 
 /* Positioning */
+//  setting up susy for static grid fixed width
 $susy: (
+  math: static,
   columns: 12,
   container: 940px,
   gutters: 20px/60px,
+  column-width: 60px,
   global-box-sizing: border-box
 );
 
