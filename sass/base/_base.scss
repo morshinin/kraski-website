@@ -33,6 +33,13 @@ input[type="text"] {
   @include show-grid(overlay);
 }
 
+%span-3-column {    //  says for itself
+  @include span(3 of 12);
+  &:last-child {
+    @include last;
+  }
+}
+
 %text-info {    //  placeholder for text snippet(used in slider and company info)
   font-size: 13px;
   font-family: $font-2;
@@ -48,4 +55,13 @@ input[type="text"] {
 %padding-for-list-items {    //  placeholder for padding used by list items in social section
   padding-left: 30px;
   padding-bottom: 10px;
+}
+%list-unstyled {
+  list-style-type: none;
+}
+%main-nav-style {
+  color: $color-inverted;
+  text-transform: uppercase;
+  font-family: $font-4;
+  font-size: 13px;
 }

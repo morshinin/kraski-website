@@ -18,6 +18,9 @@
 
     >li {
       @include inline-block-list-item(10px);    //  compass mixin
+      a {
+        @extend %main-nav-style;
+      }
     }
 
     li + li {

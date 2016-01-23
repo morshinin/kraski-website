@@ -22,3 +22,13 @@
     background: $color-highlight;
   }
 }
+
+%payment-info-btn {
+  display: block;
+  color: $color-inverted;
+  font-family: $font-2;
+  font-size: 15px;
+  background: url(../images/icons/arrow-right-icon.png) 180px 16px $color-strong-text no-repeat;
+  padding: 14px 20px;
+  @include border-radius(5px);
+}
