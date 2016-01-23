@@ -5,5 +5,32 @@
 */
 
 form {
-  
+
+}
+
+%vertical-align {
+
+  vertical-align: middle;
+}
+
+#search {
+  width: 264px;
+  font-family: $font-5;
+  color: $color-form-text;
+  padding: 0 0 0 14px;
+  height: 29px;
+  background: $color-form-bg;
+  @include border-radius(3px);
+  border-width: 1px;
+  border-color: $color-form-border;
+}
+
+.m-search-btn {
+  padding: 0 19px 0 23px;
+  height: 30px;
+  margin: 0;
+  border-width: 0;
+  @include border-right-radius(3px);
+/*   border-color: $color-highlight; */
+  background: $color-highlight;
 }

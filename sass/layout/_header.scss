@@ -5,7 +5,7 @@
 */
 .l-header {}
 /* Contact information menu */
-.l-span-7 {    //  set grid for contact information list
+.l-main-contact-wrapper {    //  set grid for contact information list
   @include span(7 of 12);    //  susy mixin takes 7 of 12 columns
   padding-top: $base-font-size;
   margin-bottom: 15px;
@@ -13,7 +13,7 @@
     color: $color-text;
   }
 }
-.l-main-contact {    //  contact information list
+.l-main-contact-list {    //  contact information list
   margin: 0;
   @extend %list-unstyled;
   li {

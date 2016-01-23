@@ -21,10 +21,7 @@
       width: 233px;
       margin-right: 80px;
       p{
-        font-family: $font-2;
-        font-size: 12px;
-        line-height: 15px;
-
+        @extend %copyright-text;
       }
       li {
         @extend %list-unstyled;
@@ -67,8 +64,20 @@
   ul li {
     @extend %list-unstyled;
     @include float-left;
+    margin-bottom: 5px;
+    /* padding: 0 10px; */
+    + li {
+      padding-left: 28px;
+      background: url(../images/icons/nav-divider.png) no-repeat top left;
+    }
     a {
       @extend %main-nav-style;
     }
+  }
+  img {
+    margin-top: 5px;
+  }
+  p {
+    @extend %copyright-text;
   }
 }

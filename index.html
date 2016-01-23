@@ -49,8 +49,8 @@
     <div class="container">
 
       <!-- MAIN CONTACT INFO -->
-      <div class="l-span-7">
-        <ul class="l-main-contact">
+      <div class="l-main-contact-wrapper">
+        <ul class="l-main-contact-list">
           <li class="icons-watch-icon">
             Пн - Вс 09:00 - 20:00
           </li>
@@ -62,12 +62,12 @@
           </li>
         </ul>
       </div>
-      <!-- l-main-contact-info -->
+      <!-- l-main-contact-wrapper -->
 
       <!-- SEARCH BOX -->
-      <form class="l-search-form" action="#">
-        <input type="text" value="Поиск">
-        <button class="l-btn t-search-btn"><img src="images/icons/search-icon.png" alt=""></button>
+      <form class="l-search-form" action="#"><!-- 
+         --><input type="search" value="Поиск" id="search"><!--
+         --><button class="m-search-btn"><img src="images/icons/search-icon.png" alt=""></button>
       </form>
       <!-- l-search-form -->
 
@@ -458,7 +458,7 @@
           <li>info@kraski-zdes.ru</li>
         </ul>
       </div>
-      <nav class="l-footer-nav">
+      <div class="l-footer-nav clearfix">
         <ul class="l-list-divided clearfix">
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Производители</a></li>
@@ -466,11 +466,11 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <div class="Visa"></div>
-        <p>
+        <img class="align-left" src="images/icons/visa-mastercard-logo.png" alt="Visa Mastercard logo" />
+        <p class="align-right">
           &copy; "Краски здесь" 2015. Все права защищены.
         </p>
-      </nav>  <!-- l-footer-nav -->
+      </div>  <!-- l-footer-nav -->
     </div>  <!-- container -->
   </footer>
   <!-- /.l-footer -->

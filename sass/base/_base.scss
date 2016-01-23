@@ -59,9 +59,15 @@ input[type="text"] {
 %list-unstyled {
   list-style-type: none;
 }
+%copyright-text {
+  font-family: $font-2;
+  font-size: 12px;
+  line-height: 15px;
+}
 %main-nav-style {
   color: $color-inverted;
   text-transform: uppercase;
   font-family: $font-4;
   font-size: 13px;
+  margin-right: 10px;
 }
