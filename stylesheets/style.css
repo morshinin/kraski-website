@@ -601,7 +601,11 @@ input[type="text"] {
 }
 @font-face {
   font-family: "OpenSans-LightItalic";
-  src: url('../fonts/OpenSans-LightItalic.ttf?1305116206') format('truetype');
+  src: url('../fonts/OpenSans-LightItalic.ttf?1453643150') format('truetype');
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url('../fonts/OpenSans-ExtraBold.ttf?1305116212') format('truetype');
 }
 /* Layout */
 /**

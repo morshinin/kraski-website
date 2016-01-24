@@ -32,6 +32,7 @@ Author: Mikhail Morshinin
 @include font-face("OpenSans-Semibold", font-files("OpenSans-Semibold.ttf"));
 @include font-face("OpenSans-Bold", font-files("OpenSans-Bold.ttf"));
 @include font-face("OpenSans-LightItalic", font-files("OpenSans-LightItalic.ttf"));
+@include font-face("OpenSans-ExtraBold", font-files("OpenSans-ExtraBold.ttf"));
 
 /* Layout */
 @import "layout/nav";
