@@ -69,8 +69,10 @@ input[type="text"] {
 }
 /* List placeholders */
 %padding-for-list-items {    //  placeholder for padding used by list items in social section
-  padding-left: 30px;
-  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-bottom: 7px;
+  padding-top: 6px;
+  margin-bottom: 15px;
 }
 %list-unstyled {
   list-style-type: none;
@@ -85,7 +87,7 @@ input[type="text"] {
 %clearfix {
   @include clearfix;
 }
-%vertical-align-hack {    //  used in main nav and shopping-cart
+%vertical-align-hack {    //  used in main nav and shopping-cart. Parent element should have a relative position
   position: relative;
   top: 50%;
   transform: translateY(-50%);

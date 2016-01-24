@@ -58,6 +58,7 @@
 /* LIST OF BRANDS */
 .l-brand-list {
   @include span(12 last); //  susy mixin
+  margin-bottom: 7px;    
   ul {
     margin-left: 56px;
     li {

@@ -6,6 +6,8 @@
 
 /* If you are looking for category buttons, look at _btn.scss file instead */
 .l-catalogue {
+  margin-top: 9px;
+  margin-bottom: 25px;
   li {
     @include span(6 of 12);    //  susy mixin for grid layout
     &:last-child {
@@ -13,6 +15,11 @@
     }
     @include inline-block-list-item;  //  compass mixin for horizontal list
   }
+}
+
+.l-additional-info {
+  margin-top: 52px;
+  margin-bottom: 6px;
 }
 
 .l-company-info {
@@ -31,35 +38,41 @@
 
 .l-social  {
   @extend %span-3-column;    //  look at _base.scss for source code
-  li {
-    @extend %list-unstyled;
+  ul {
+    padding-top: 12px;
+    li {
+      @extend %list-unstyled;
 
-    &:nth-of-type(1) {
-      @extend %padding-for-list-items;  //  sets the padding
-      background: url(../images/icons/social/youtube-logo.png) no-repeat;
-    }
-    &:nth-of-type(2) {
-      @extend %padding-for-list-items;
-      background: url(../images/icons/social/vkontakte-logo.png) no-repeat;
-    }
-    &:nth-of-type(3) {
-      @extend %padding-for-list-items;
-      background: url(../images/icons/social/facebook-logo.png) no-repeat;
-    }
-    a {
-      @extend %strong-text;
+      &:nth-of-type(1) {
+        @extend %padding-for-list-items;  //  sets the padding look at _base.scss for source code
+        background: url(../images/icons/social/youtube-logo.png) no-repeat;
+      }
+      &:nth-of-type(2) {
+        @extend %padding-for-list-items;   //  sets the padding look at _base.scss for source code
+        background: url(../images/icons/social/vkontakte-logo.png) no-repeat;
+      }
+      &:nth-of-type(3) {
+        @extend %padding-for-list-items;   //  sets the padding look at _base.scss for source code
+        background: url(../images/icons/social/facebook-logo.png) no-repeat;
+      }
+      a {
+        @extend %strong-text;
+      }
     }
   }
 }
 
 .l-payment-info {
   @extend %span-3-column;  //  look at _base.scss
-  li {
-    @extend %list-unstyled;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    a {
-      @extend %payment-info-btn;
+  ul {
+    padding-top: 7px;
+    li {
+      @extend %list-unstyled;
+  /*     margin-top: 5px; */
+      margin-bottom: 8px;
+      a {
+        @extend %payment-info-btn;
+      }
     }
   }
 }

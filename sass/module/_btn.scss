@@ -4,25 +4,34 @@
 * -----------------------------------------------------------
 */
 
-.btn {
+.btn {    //  catalogue button, appears in catalogue section(_catalogue.scss)
   display: block;
-  padding: 38px 13px;
-  margin: 10px 0;
+  padding: 38px 13px 38px 83px;
+  margin: 5px 0;
   position: relative;
   text-align: center;
   background: $color-hr;
-  span {    //  square inside button
-    padding: 26px;
+  font-family: $font-3;
+  font-size: 18px;
+  color: $color-dark;
+  text-transform: uppercase;
+  @include border-radius(12px);
+  span {    //  square inside catalogue button
+    padding: 22px;
+    width: 65px;
+    height: 65px;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 13px;
+    top: 17px;
     @include border-radius(6px);
     background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
-
+    font-family: $font-3;
+    font-size: 16px;
+    color: $color-inverted;
   }
-  &:hover span {
+  &:hover span {    //  square inside catalogue button hovered
     background-image: -moz-linear-gradient( 90deg, rgb(162,10,100) 0%, rgb(223,21,141) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(162,10,100) 0%, rgb(223,21,141) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(162,10,100) 0%, rgb(223,21,141) 100%);
@@ -34,7 +43,7 @@
   color: $color-inverted;
   font-family: $font-2;
   font-size: 15px;
-  background: url(../images/icons/arrow-right-icon.png) 180px 16px $color-strong-text no-repeat;
-  padding: 14px 20px;
+  background: url(../images/icons/arrow-right-icon.png) 180px 13px $color-strong-text no-repeat;
+  padding: 11px 20px;
   @include border-radius(5px);
 }

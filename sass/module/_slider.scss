@@ -8,7 +8,6 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 40px;  // create space for slider control
-  border: 1px solid $color-hr;
 }
 // set space for slider controls
 .m-slider::after {
@@ -21,6 +20,7 @@
   display: block;
   background: #fff;
   height: 48px;
+  border-top: 1px solid $color-hr;
 }
 .m-slide-switch {
   display: none;
@@ -64,6 +64,7 @@
   background: #fff;
   float: left;
   margin-right: -100%;
+  border: 1px solid $color-hr;
 }
 // highlight checked label
 .m-slide-switch:checked + .m-slide-label {
