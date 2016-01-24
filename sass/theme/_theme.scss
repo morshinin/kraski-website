@@ -4,4 +4,21 @@
 * -----------------------------------------------------------
 */
 
-/* Style for header */
+/* Background for whole site */
+.t-html {
+  background: url(../images/bg-image-wide.jpg) 65% 102% no-repeat;
+}
+.t-header {
+  background-color: $color-header-bg;
+}
+/* Background for catalogue */
+.t-body {
+  background: linear-gradient(to top, white, white);
+  background-size: 1020px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+/* Background for company info */
+.t-additional-info {
+  background-color: $color-header-bg;
+}

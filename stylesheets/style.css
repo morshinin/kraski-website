@@ -706,10 +706,6 @@ input[type="text"] {
 * Header styles
 * -----------------------------------------------------------
 */
-.l-header {
-  margin-bottom: 18px;
-}
-
 /* Contact information menu */
 .l-main-contact-wrapper {
   width: 540px;
@@ -866,6 +862,7 @@ input[type="text"] {
 .l-catalogue {
   margin-top: 9px;
   margin-bottom: 25px;
+  position: relative;
 }
 .l-catalogue li {
   width: 460.0px;
@@ -888,7 +885,7 @@ input[type="text"] {
 
 .l-additional-info {
   margin-top: 52px;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .l-company-info {
@@ -1241,4 +1238,24 @@ hr {
 * Theme styles
 * -----------------------------------------------------------
 */
-/* Style for header */
+/* Background for whole site */
+.t-html {
+  background: url(../images/bg-image-wide.jpg) 65% 102% no-repeat;
+}
+
+.t-header {
+  background-color: #eff2f4;
+}
+
+/* Background for catalogue */
+.t-body {
+  background: linear-gradient(to top, #ffffff, #ffffff);
+  background-size: 1020px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/* Background for company info */
+.t-additional-info {
+  background-color: #eff2f4;
+}

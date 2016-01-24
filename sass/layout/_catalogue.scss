@@ -8,6 +8,7 @@
 .l-catalogue {
   margin-top: 9px;
   margin-bottom: 25px;
+  position: relative;
   li {
     @include span(6 of 12);    //  susy mixin for grid layout
     &:last-child {
@@ -19,7 +20,7 @@
 
 .l-additional-info {
   margin-top: 52px;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .l-company-info {

@@ -69,11 +69,10 @@
   }
 }
 
-.l-nav-secondary {
+.l-nav-secondary {    //  secondary navigation
   @include span(12 last);    //  susy mixin
 
   padding: 3px 0;
-
   >ul {
     display: inline-block;
 
