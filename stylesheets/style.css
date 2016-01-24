@@ -937,17 +937,28 @@ input[type="text"] {
   width: 940px;
   float: right;
   margin-right: 0;
-  margin: 20px 0 30px;
+  margin: 6px 0 34px;
+}
+.l-shop-adress > ul {
+  padding-top: 12px;
 }
 .l-shop-adress > ul > li {
   float: left;
-  /* @include inline-block-list-item; */
   width: 233px;
-  margin-right: 80px;
+  margin-right: 77px;
+}
+.l-shop-adress > ul > li p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.l-shop-adress > ul > li:nth-of-type(2) {
+  margin-right: 65px;
 }
 .l-shop-adress > ul > li li:last-of-type {
   padding-left: 23px;
-  background: url(../images/icons/phone-icon.png) no-repeat;
+  margin-top: 7px;
+  letter-spacing: 1.5px;
+  background: url(../images/icons/phone-icon.png) 0 4px no-repeat;
 }
 .l-shop-adress > ul > li li:last-of-type a {
   color: #e5097f;
@@ -968,17 +979,28 @@ input[type="text"] {
 .l-footer-contact ul {
   margin-left: 25px;
 }
+.l-footer-contact ul li {
+  padding-left: 30px;
+  margin-bottom: 6px;
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 16px;
+}
 .l-footer-contact ul li:nth-of-type(1) {
-  background: url(../images/icons/phone-icon.png) no-repeat;
+  background: url(../images/icons/phone-icon.png) 1px 11px no-repeat;
 }
 .l-footer-contact ul li:nth-of-type(2) {
-  background: url(../images/icons/envelope-icon.png) no-repeat;
+  background: url(../images/icons/envelope-icon.png) 1px 11px no-repeat;
 }
 
 .l-footer-nav {
   width: 620.0px;
   float: right;
   margin-right: 0;
+  padding-left: 38px;
+  padding-top: 7px;
+}
+.l-footer-nav ul {
+  margin-bottom: 10px;
 }
 .l-footer-nav ul li {
   float: left;
@@ -987,10 +1009,17 @@ input[type="text"] {
 }
 .l-footer-nav ul li + li {
   padding-left: 28px;
-  background: url(../images/icons/nav-divider.png) no-repeat top left;
+  background: url(../images/icons/nav-divider-highlight.png) no-repeat top left;
+}
+.l-footer-nav ul li a {
+  margin-right: 6px;
 }
 .l-footer-nav img {
   margin-top: 5px;
+}
+.l-footer-nav p {
+  line-height: 14px;
+  letter-spacing: 0.5px;
 }
 
 /* Modules */
@@ -1212,3 +1241,4 @@ hr {
 * Theme styles
 * -----------------------------------------------------------
 */
+/* Style for header */

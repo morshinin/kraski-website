@@ -12,22 +12,30 @@
 
 .l-shop-adress {
   @include span(12 last);
-  margin: 20px 0 30px;
+  margin: 6px 0 34px;
   > ul {
-    > li {
+    padding-top: 12px;
+    > li {  //    shop address and phone number
       @extend %list-unstyled;
       @include float-left;
-      /* @include inline-block-list-item; */
       width: 233px;
-      margin-right: 80px;
+      margin-right: 77px;
       p{
         @extend %copyright-text;
+        margin-top: 0;
+        margin-bottom: 0;
       }
-      li {
+      &:nth-of-type(2) {
+        margin-right: 65px;
+      }
+      li {    //  shop address
         @extend %list-unstyled;
-        &:last-of-type {
+        &:last-of-type {    //  phone number
           padding-left: 23px;
-          background: url(../images/icons/phone-icon.png) no-repeat;
+          margin-top: 7px;
+          letter-spacing: 1.5px;
+          background: url(../images/icons/phone-icon.png) 0 4px no-repeat;
+
           a {
             color: $color-highlight;
             font-family: $font-4;
@@ -49,35 +57,47 @@
     li {
       @extend %list-unstyled;
       @extend %padding-for-list-items;
+      padding-left: 30px;
+      margin-bottom: 6px;
+      font-family: $font-2;
+      font-size: 16px;
       &:nth-of-type(1) {
-        background: url(../images/icons/phone-icon.png) no-repeat;
+        background: url(../images/icons/phone-icon.png) 1px 11px no-repeat;
       }
       &:nth-of-type(2) {
-        background: url(../images/icons/envelope-icon.png) no-repeat;
+        background: url(../images/icons/envelope-icon.png) 1px 11px no-repeat;
       }
     }
   }
 }
 .l-footer-nav {
   @include span(8 last);
-
-  ul li {
-    @extend %list-unstyled;
-    @include float-left;
-    margin-bottom: 5px;
-    /* padding: 0 10px; */
-    + li {
-      padding-left: 28px;
-      background: url(../images/icons/nav-divider.png) no-repeat top left;
-    }
-    a {
-      @extend %main-nav-style;
+  padding-left: 38px;
+  padding-top: 7px;
+  ul {
+    margin-bottom: 10px;
+    li {
+      @extend %list-unstyled;
+      @include float-left;
+      margin-bottom: 5px;
+      /* padding: 0 10px; */
+      + li {
+        padding-left: 28px;
+        background: url(../images/icons/nav-divider-highlight.png) no-repeat top left;
+      }
+      a {
+        @extend %main-nav-style;
+        margin-right: 6px;
+      }
     }
   }
+
   img {
     margin-top: 5px;
   }
   p {
     @extend %copyright-text;
+    line-height: 14px;
+    letter-spacing: 0.5px;
   }
 }
