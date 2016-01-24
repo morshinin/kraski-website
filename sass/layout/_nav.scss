@@ -3,31 +3,72 @@
 * Nav styles
 * -----------------------------------------------------------
 */
-.l-main-nav-bar {    //  layout styles for main menu
+
+.l-nav-wrapper {
   @include span(12 last); //  navbar takes all columns(susy mixin)
-  padding: 14px 0 16px 16px;
+  @extend %clearfix;
   margin: 15px 0 11px 0;    //  15px from main contact above and 11px from secondary nav below
+  background: $color-shopping-cart-bg;
+  height: 100px;  //  set height for vertical aligning the child element
+  @include border-radius(8px);
+}
+.l-main-nav-bar {    //  layout styles for main menu
+  display: inline-block;
+  @extend %float-left;
+  @include border-left-radius(8px);
+  width: 740px;
+  padding: 14px 0 16px 16px;
+  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(50,50,50) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(50,50,50) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(50,50,50) 100%);
 
-  background-color: #333;
-
-  >ul {
+  height: 100px;    //  set height for vertical aligning the child element
+  >ul:first-of-type {
     display: inline-block;
 
-    margin-top: 16px;
-    margin-left: 35px;    //  margin from logo image
+    margin-top: 0;
+    margin-left: 36px;    //  margin from logo image
 
+    @extend %vertical-align-hack;
     >li {
-      @include inline-block-list-item(10px);    //  compass mixin
-      a {
-        @extend %main-nav-style;
+      @extend %list-unstyled, %float-left;
+      + li {
+        padding-left: 28px;
+        background: url(../images/icons/nav-divider.png) no-repeat top left;
       }
-    }
-
-    li + li {
-      background: url(../images/icons/nav-divider.png) no-repeat top left;
+      a {
+        @extend %main-nav-style;  //  text styles for navigation
+      }
     }
   }
 }
+.l-shopping-cart {
+  @extend %float-left, %clearfix;
+  @extend %vertical-align-hack;
+  height: 100px;
+  padding-left: 12px;
+  img {
+    @extend %float-left;
+    @extend %vertical-align-hack;
+    padding: 0 24px 0 21px;
+    background: url(../images/icons/nav-divider.png) no-repeat top right;
+  }
+  #shopping-cart {
+    @extend %float-left;
+    @extend %vertical-align-hack;
+    padding-left: 10px;
+    color: $color-inverted;
+    .cart-title {
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    li {
+      @extend %list-unstyled;
+      font-size: 12px;
+    }
+  }
+}
+
 .l-nav-secondary {
   @include span(12 last);    //  susy mixin
 

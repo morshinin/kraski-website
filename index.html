@@ -65,7 +65,7 @@
       <!-- l-main-contact-wrapper -->
 
       <!-- SEARCH BOX -->
-      <form class="l-search-form" action="#"><!-- 
+      <form class="l-search-form" action="#"><!--
          --><input type="search" value="Поиск" id="search"><!--
          --><button class="m-search-btn"><img src="images/icons/search-icon.png" alt=""></button>
       </form>
@@ -73,6 +73,7 @@
 
 
       <!-- MAIN NAVIGATION BAR -->
+      <div class="l-nav-wrapper">
       <nav class="l-main-nav-bar">
         <img class="align-left" src="images/icons/kraski-zdes-logo.png" alt="Краски здесь" />
         <ul>
@@ -82,20 +83,23 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
-          <li>
+      </nav>
+      <!-- l-main-nav-bar -->
+        <div class="l-shopping-cart">
             <img src="images/icons/cart-icon.png" alt="">
-          </li>
-          <li>
-            <ul id="cart-info">
-              <li>В корзине</li>
+
+
+            <ul id="shopping-cart">
+              <li class="cart-title">В корзине</li>
               <li>0 товаров</li>
               <li>0 руб.</li>
             </ul>
-          </li>
+
         </ul>
-      </nav>
-      <!-- l-main-nav-bar -->
+        </div>  <!-- l-shopping-cart -->
+      </div>  <!-- nav-wrapper -->
+
+      <!-- SECONDARY NAVIGATION BAR -->
       <nav class="l-nav-secondary">
         <ul>
           <li><a href="#">Акции</a></li>

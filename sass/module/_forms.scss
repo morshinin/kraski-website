@@ -8,29 +8,28 @@ form {
 
 }
 
-%vertical-align {
 
-  vertical-align: middle;
-}
 
-#search {
+#search {    //  search input style
   width: 264px;
   font-family: $font-5;
   color: $color-form-text;
   padding: 0 0 0 14px;
   height: 29px;
   background: $color-form-bg;
-  @include border-radius(3px);
+  @include border-left-radius(3px);
   border-width: 1px;
   border-color: $color-form-border;
+  @extend %vertical-align-middle;
 }
 
-.m-search-btn {
+.m-search-btn {    //  search button style
   padding: 0 19px 0 23px;
-  height: 30px;
+  height: 31px;
   margin: 0;
   border-width: 0;
   @include border-right-radius(3px);
+  @extend %vertical-align-middle;
 /*   border-color: $color-highlight; */
   background: $color-highlight;
 }

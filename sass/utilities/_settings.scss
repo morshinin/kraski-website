@@ -28,6 +28,9 @@ $color-inverted: #fff;
 $color-form-text: #78909c;
 $color-form-bg: #fdfefe;
 $color-form-border: #d2dbde;
+
+$color-shopping-cart-bg: #242424;
+
 $color-highlight: #e5097f;
 
 $color-hr: #f1f3f5;
@@ -43,7 +46,7 @@ $susy: (
   global-box-sizing: border-box
 );
 
-@include border-box-sizing;
+
 
 $margin-multipier: 2;
 

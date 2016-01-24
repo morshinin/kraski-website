@@ -3,6 +3,8 @@
 * Base styles
 * -------------------------------------------
 */
+
+@include border-box-sizing;
 html,
 ul {
   /* background-image: url('../images/kraski-home.jpg');
@@ -40,6 +42,8 @@ input[type="text"] {
   }
 }
 
+/* Typography placeholders */
+
 %text-info {    //  placeholder for text snippet(used in slider and company info)
   font-size: 13px;
   font-family: $font-2;
@@ -51,7 +55,19 @@ input[type="text"] {
   font-size: 16px;
   color: $color-strong-text;
 }
-
+%copyright-text {    //  used in shop adress and copyright(footer section)
+  font-family: $font-2;
+  font-size: 12px;
+  line-height: 15px;
+}
+%main-nav-style {    //  used in main navigation
+  color: $color-inverted;
+  text-transform: uppercase;
+  font-family: $font-4;
+  font-size: 13px;
+  margin-right: 10px;
+}
+/* List placeholders */
 %padding-for-list-items {    //  placeholder for padding used by list items in social section
   padding-left: 30px;
   padding-bottom: 10px;
@@ -59,15 +75,18 @@ input[type="text"] {
 %list-unstyled {
   list-style-type: none;
 }
-%copyright-text {
-  font-family: $font-2;
-  font-size: 12px;
-  line-height: 15px;
+/* Other placeholders */
+%vertical-align-middle {    //  used in search box
+  vertical-align: middle;
 }
-%main-nav-style {
-  color: $color-inverted;
-  text-transform: uppercase;
-  font-family: $font-4;
-  font-size: 13px;
-  margin-right: 10px;
+%float-left {
+  @include float-left;
+}
+%clearfix {
+  @include clearfix;
+}
+%vertical-align-hack {    //  used in main nav and shopping-cart
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
