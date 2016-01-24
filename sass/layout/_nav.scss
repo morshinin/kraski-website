@@ -72,13 +72,21 @@
 .l-nav-secondary {
   @include span(12 last);    //  susy mixin
 
-  padding: 11px 0;
+  padding: 3px 0;
 
   >ul {
     display: inline-block;
 
     >li {
-      @include inline-block-list-item(20px);
+      @include inline-block-list-item();
+      padding-left: 57px;
+      padding-right: 26px;
+      a {
+        font-family: $font-6;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $color-dark;
+      }
     }
   }
 }

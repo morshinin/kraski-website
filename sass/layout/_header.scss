@@ -3,7 +3,9 @@
 * Header styles
 * -----------------------------------------------------------
 */
-.l-header {}
+.l-header {
+  margin-bottom: 11px;
+}
 /* Contact information menu */
 .l-main-contact-wrapper {    //  set grid for contact information list
   @include span(7 of 12);    //  susy mixin takes 7 of 12 columns

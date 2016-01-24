@@ -674,7 +674,7 @@ input[type="text"] {
   width: 940px;
   float: right;
   margin-right: 0;
-  padding: 11px 0;
+  padding: 3px 0;
 }
 .l-nav-secondary > ul {
   display: inline-block;
@@ -689,8 +689,14 @@ input[type="text"] {
   *zoom: 1;
   *display: inline;
   white-space: nowrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 57px;
+  padding-right: 26px;
+}
+.l-nav-secondary > ul > li a {
+  font-family: "OpenSans-ExtraBold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #333;
 }
 
 /**
@@ -698,6 +704,10 @@ input[type="text"] {
 * Header styles
 * -----------------------------------------------------------
 */
+.l-header {
+  margin-bottom: 11px;
+}
+
 /* Contact information menu */
 .l-main-contact-wrapper {
   width: 540px;
@@ -760,6 +770,10 @@ input[type="text"] {
 * Main styles
 * -----------------------------------------------------------
 */
+.l-featured-section {
+  margin-top: 11px;
+}
+
 /* SLIDE STYLES */
 .l-slide-wrapper {
   position: relative;
