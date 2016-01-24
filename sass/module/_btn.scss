@@ -13,17 +13,23 @@
   background: $color-hr;
   span {    //  square inside button
     padding: 26px;
-    background: $color-text;
     position: absolute;
     left: 10px;
     top: 10px;
+    @include border-radius(6px);
+    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
+
   }
   &:hover span {
-    background: $color-highlight;
+    background-image: -moz-linear-gradient( 90deg, rgb(162,10,100) 0%, rgb(223,21,141) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(162,10,100) 0%, rgb(223,21,141) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(162,10,100) 0%, rgb(223,21,141) 100%);
   }
 }
 
-%payment-info-btn {
+%payment-info-btn {    //  these buttons appears in company info section
   display: block;
   color: $color-inverted;
   font-family: $font-2;

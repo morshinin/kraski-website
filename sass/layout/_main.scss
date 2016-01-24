@@ -4,7 +4,7 @@
 * -----------------------------------------------------------
 */
 .l-featured-section {
-  margin-top: 11px;
+  margin-top: 37px;
 }
 /* SLIDE STYLES */
 .l-slide-wrapper {
@@ -14,13 +14,13 @@
   //  position slide image
   width: 187px;
   height: 174px;
-  margin: 40px 45px 59px 40px;
+  margin: 40px 45px 68px 40px;
   @include float-left;
 }
 .l-text-well {
   //  position slide text
   width: 430px;
-  margin: 22px 0 0 30px;
+  margin: 22px 0 0 27px;
   @include float-left;
   h1 {
     //  slide header
@@ -29,7 +29,7 @@
   }
   p {
     //  slide text
-    @extend %text-info;  //  sass placeholder selector look at _base.scss
+    @extend %text-info;  //  sass placeholder selector for text style (look at _base.scss for source code)
   }
 }
 .l-price-tag {
@@ -40,14 +40,19 @@
   width: 0;
   height: 0;
   border-style: solid; // make triangle
-  border-width: 0 0 107px 337px;
+  border-width: 0 0 114px 360px;
   border-color: transparent transparent $color-highlight transparent;
   p {
     // set text of the tag visible
     position: relative;
     width: 200px;
-    left: -140px;
-    top: 60px;
+    left: -162px;
+    top: 46px;
+    color: $color-inverted;
+    span {
+      font-family: $font-3;
+      font-size: 24px;
+    }
   }
 }
 /* LIST OF BRANDS */
@@ -58,6 +63,6 @@
     li {
       @include inline-block-list-item; //  compass mixin
     }
-    @include list-item-right-margin(5, 80, 80, 90, 67, 70); //  you find this mixin in the _utilities.scss
+    @include list-item-right-margin(5, 80, 75, 84, 62, 70); //  you find this mixin in the _utilities.scss
   }
 }
