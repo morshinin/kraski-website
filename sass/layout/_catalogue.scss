@@ -6,11 +6,11 @@
 
 /* If you are looking for category buttons, look at _btn.scss file instead */
 .l-catalogue {
-  margin-top: 9px;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
   position: relative;
   li {
     @include span(6 of 12);    //  susy mixin for grid layout
+    margin-bottom: 10px;
     &:last-child {
       @include last;    //  tells susy remove last gutter
     }
@@ -19,8 +19,8 @@
 }
 
 .l-additional-info {
-  margin-top: 52px;
   padding-bottom: 6px;
+  padding-top: 9px;
 }
 
 .l-company-info {

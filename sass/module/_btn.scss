@@ -4,20 +4,21 @@
 * -----------------------------------------------------------
 */
 
-.btn {    //  catalogue button, appears in catalogue section(_catalogue.scss)
+.m-catalogue-btn {    //  catalogue button, appears in catalogue section(_catalogue.scss)
   display: block;
-  padding: 38px 13px 38px 83px;
-  margin: 5px 0;
+  padding: 0 13px 0 83px;
   position: relative;
+  height: 100px;
   text-align: center;
   background: $color-hr;
   font-family: $font-3;
   font-size: 18px;
   color: $color-dark;
   text-transform: uppercase;
+  line-height: 100px;
   @include border-radius(12px);
   span {    //  square inside catalogue button
-    padding: 22px;
+    /* padding: 22px; */
     width: 65px;
     height: 65px;
     position: absolute;
@@ -29,6 +30,7 @@
     background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(66,66,66) 100%);
     font-family: $font-3;
     font-size: 16px;
+    line-height: 63px;
     color: $color-inverted;
   }
   &:hover span {    //  square inside catalogue button hovered

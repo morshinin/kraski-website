@@ -9,6 +9,10 @@ Technology used in project:
   version control - Git
   methodology - SMACSS
 
+Validation
+  HTML - OK
+  CSS 2.1 - OK
+
 Crossbrowser testing
   Mac OS X El Capitan Safari 9
   Mac OS X El Capitan Chrome 47

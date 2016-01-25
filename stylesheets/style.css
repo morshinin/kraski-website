@@ -821,7 +821,7 @@ input[type="text"] {
   width: 940px;
   float: right;
   margin-right: 0;
-  margin-bottom: 7px;
+  margin-bottom: 19px;
 }
 .l-brand-list ul {
   margin-left: 56px;
@@ -860,14 +860,14 @@ input[type="text"] {
 */
 /* If you are looking for category buttons, look at _btn.scss file instead */
 .l-catalogue {
-  margin-top: 9px;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
   position: relative;
 }
 .l-catalogue li {
   width: 460.0px;
   float: left;
   margin-right: 20px;
+  margin-bottom: 10px;
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -884,8 +884,8 @@ input[type="text"] {
 }
 
 .l-additional-info {
-  margin-top: 52px;
   padding-bottom: 6px;
+  padding-top: 9px;
 }
 
 .l-company-info {
@@ -1025,23 +1025,24 @@ input[type="text"] {
 * Button styles
 * -----------------------------------------------------------
 */
-.btn {
+.m-catalogue-btn {
   display: block;
-  padding: 38px 13px 38px 83px;
-  margin: 5px 0;
+  padding: 0 13px 0 83px;
   position: relative;
+  height: 100px;
   text-align: center;
   background: #f1f3f5;
   font-family: "OpenSans-Semibold", Arial, sans-serif;
   font-size: 18px;
   color: #333;
   text-transform: uppercase;
+  line-height: 100px;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
 }
-.btn span {
-  padding: 22px;
+.m-catalogue-btn span {
+  /* padding: 22px; */
   width: 65px;
   height: 65px;
   position: absolute;
@@ -1055,9 +1056,10 @@ input[type="text"] {
   background-image: -ms-linear-gradient(90deg, black 0%, #424242 100%);
   font-family: "OpenSans-Semibold", Arial, sans-serif;
   font-size: 16px;
+  line-height: 63px;
   color: #fff;
 }
-.btn:hover span {
+.m-catalogue-btn:hover span {
   background-image: -moz-linear-gradient(90deg, #a20a64 0%, #df158d 100%);
   background-image: -webkit-linear-gradient(90deg, #a20a64 0%, #df158d 100%);
   background-image: -ms-linear-gradient(90deg, #a20a64 0%, #df158d 100%);
