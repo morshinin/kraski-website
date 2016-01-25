@@ -8,3 +8,7 @@ Technology used in project:
   styling - CSS, SASS, Compass, Susy
   version control - Git
   methodology - SMACSS
+
+Crossbrowser testing
+  Mac OS X El Capitan Safari 9
+  Mac OS X El Capitan Chrome 47
