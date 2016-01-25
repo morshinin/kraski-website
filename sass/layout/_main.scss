@@ -19,7 +19,7 @@
 }
 .l-text-well {
   //  position slide text
-  width: 430px;
+  width: 445px;
   margin: 22px 0 0 27px;
   @include float-left;
   h1 {
@@ -58,7 +58,7 @@
 /* LIST OF BRANDS */
 .l-brand-list {
   @include span(12 last); //  susy mixin
-  margin-bottom: 19px;    
+  margin-bottom: 19px;
   ul {
     margin-left: 56px;
     li {

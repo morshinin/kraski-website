@@ -1,5 +1,7 @@
-test on mac - Safari checked
-Firefox
+test on mac - Safari x
+Firefox x
+Chrome x
+Opera x
 test on windows - explorer
 Chrome
 Firefox
@@ -22,4 +24,7 @@ chrome and firefox on mac different padding in catalogue buttons
       then set margin-bottom for list items, and set line-height for anchor
       and span element inside it for the vertical align sake
 
-background-position-y not working properly in firefox on mac 
+background-position-y not working properly in firefox on mac
+    SOLVED
+      position-y went from IE, Google copied it, Firefox doesn't,
+      what needed is set that way background-position: x y;

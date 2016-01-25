@@ -14,5 +14,8 @@ Validation
   CSS 2.1 - OK
 
 Crossbrowser testing
-  Mac OS X El Capitan Safari 9
-  Mac OS X El Capitan Chrome 47
+  Mac OS X El Capitan
+    Safari 9
+    Chrome 47
+    Firefox 43
+    Opera 34

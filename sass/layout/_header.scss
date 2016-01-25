@@ -18,26 +18,26 @@
   @extend %list-unstyled;
   li {
     @include float-left;
-    &:nth-of-type(1) {    // positioning the first item of the contact info
+    &:nth-of-type(1) {    // positioning time
       padding-left: 29px;
       padding-right: 43px;
       padding-bottom: 7px;
       background-image: url(../images/icons/watch-icon.png);
       background-repeat: no-repeat;
     }
-    &:nth-of-type(2) {    // positioning of the second item
+    &:nth-of-type(2) {    // positioning phone number
       padding-left: 22px;
       padding-right: 65px;
       background-image: url(../images/icons/phone-icon.png);
-      background-position-y: 4px;
+      background-position: 0 4px;
       background-repeat: no-repeat;
     }
-    &:last-child {      // positioning last item of the contact list
+    &:last-child {      // positioning email address
       @include bleed-x(20px);
       padding-left: 24px;
       padding-right: 0;
       background-image: url(../images/icons/envelope-icon.png);
-      background-position-y: 7px;
+      background-position: 0 6px;
       background-repeat: no-repeat;
     }
   }

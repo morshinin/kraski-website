@@ -735,7 +735,7 @@ input[type="text"] {
   padding-left: 22px;
   padding-right: 65px;
   background-image: url(../images/icons/phone-icon.png);
-  background-position-y: 4px;
+  background-position: 0 4px;
   background-repeat: no-repeat;
 }
 .l-main-contact-list li:last-child {
@@ -749,7 +749,7 @@ input[type="text"] {
   padding-left: 24px;
   padding-right: 0;
   background-image: url(../images/icons/envelope-icon.png);
-  background-position-y: 7px;
+  background-position: 0 6px;
   background-repeat: no-repeat;
 }
 
@@ -785,7 +785,7 @@ input[type="text"] {
 }
 
 .l-text-well {
-  width: 430px;
+  width: 445px;
   margin: 22px 0 0 27px;
   float: left;
 }
@@ -986,7 +986,7 @@ input[type="text"] {
   background: url(../images/icons/phone-icon.png) 1px 11px no-repeat;
 }
 .l-footer-contact ul li:nth-of-type(2) {
-  background: url(../images/icons/envelope-icon.png) 1px 11px no-repeat;
+  background: url(../images/icons/envelope-icon.png) 1px 14px no-repeat;
 }
 
 .l-footer-nav {
