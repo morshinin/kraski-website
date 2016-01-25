@@ -587,27 +587,39 @@ input[type="text"] {
 /* Fonts */
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url('../fonts/OpenSans-Regular.ttf?1305116204') format('truetype');
+  src: url('../fonts/opensans_regular/OpenSans-Regular-webfont.eot?1453747702');
+  src: url('../fonts/opensans_regular/OpenSans-Regular-webfont.eot?&1453747702#iefix') format('embedded-opentype'), url('../fonts/opensans_regular/OpenSans-Regular-webfont.ttf?1453747702') format('truetype'), url('../fonts/opensans_regular/OpenSans-Regular-webfont.woff?1453747702') format('woff'), url('../fonts/opensans_regular/OpenSans-Regular-webfont.svg?1453747702') format('svg');
 }
 @font-face {
   font-family: "OpenSans-Light";
-  src: url('../fonts/OpenSans-Light.ttf?1305116206') format('truetype');
+  src: url('../fonts/opensans_light/OpenSans-Light-webfont.eot?1453747702');
+  src: url('../fonts/opensans_light/OpenSans-Light-webfont.eot?&1453747702#iefix') format('embedded-opentype'), url('../fonts/opensans_light/OpenSans-Light-webfont.ttf?1453747702') format('truetype'), url('../fonts/opensans_light/OpenSans-Light-webfont.woff?1453747702') format('woff'), url('../fonts/opensans_light/OpenSans-Light-webfont.svg?1453747702') format('svg');
+  font-weight: 300;
 }
 @font-face {
   font-family: "OpenSans-Semibold";
-  src: url('../fonts/OpenSans-Semibold.ttf?1305116202') format('truetype');
+  src: url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.eot?1453747702');
+  src: url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.eot?&1453747702#iefix') format('embedded-opentype'), url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.ttf?1453747702') format('truetype'), url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.woff?1453747702') format('woff'), url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.svg?1453747702') format('svg');
+  font-weight: 600;
 }
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url('../fonts/OpenSans-Bold.ttf?1305116216') format('truetype');
+  src: url('../fonts/opensans_bold/OpenSans-Bold-webfont.eot?1453747702');
+  src: url('../fonts/opensans_bold/OpenSans-Bold-webfont.eot?&1453747702#iefix') format('embedded-opentype'), url('../fonts/opensans_bold/OpenSans-Bold-webfont.ttf?1453747702') format('truetype'), url('../fonts/opensans_bold/OpenSans-Bold-webfont.woff?1453747702') format('woff'), url('../fonts/opensans_bold/OpenSans-Bold-webfont.svg?1453747702') format('svg');
+  font-weight: 700;
 }
 @font-face {
   font-family: "OpenSans-LightItalic";
-  src: url('../fonts/OpenSans-LightItalic.ttf?1453643150') format('truetype');
+  src: url('../fonts/opensans_lightitalic/OpenSans-LightItalic-webfont.eot?1453747702');
+  src: url('../fonts/opensans_lightitalic/OpenSans-LightItalic-webfont.eot?&1453747702#iefix') format('embedded-opentype'), url('../fonts/opensans_lightitalic/OpenSans-LightItalic-webfont.ttf?1453747702') format('truetype'), url('../fonts/opensans_lightitalic/OpenSans-LightItalic-webfont.woff?1453747702') format('woff'), url('../fonts/opensans_lightitalic/OpenSans-LightItalic-webfont.svg?1453747702') format('svg');
+  font-weight: 300;
+  font-style: italic;
 }
 @font-face {
   font-family: "OpenSans-ExtraBold";
-  src: url('../fonts/OpenSans-ExtraBold.ttf?1305116212') format('truetype');
+  src: url('../fonts/opensans_extrabold/OpenSans-ExtraBold-webfont.eot?1453747702');
+  src: url('../fonts/opensans_extrabold/OpenSans-ExtraBold-webfont.eot?&1453747702#iefix') format('embedded-opentype'), url('../fonts/opensans_extrabold/OpenSans-ExtraBold-webfont.ttf?1453747702') format('truetype'), url('../fonts/opensans_extrabold/OpenSans-ExtraBold-webfont.woff?1453747702') format('woff'), url('../fonts/opensans_extrabold/OpenSans-ExtraBold-webfont.svg?1453747702') format('svg');
+  font-weight: 800;
 }
 /* Layout */
 /**
@@ -864,7 +876,7 @@ input[type="text"] {
   position: relative;
 }
 .l-catalogue li {
-  width: 460.0px;
+  width: 460px;
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -889,7 +901,7 @@ input[type="text"] {
 }
 
 .l-company-info {
-  width: 460.0px;
+  width: 460px;
   float: left;
   margin-right: 20px;
 }
@@ -990,7 +1002,7 @@ input[type="text"] {
 }
 
 .l-footer-nav {
-  width: 620.0px;
+  width: 620px;
   float: right;
   margin-right: 0;
   padding-left: 38px;

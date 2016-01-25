@@ -1,11 +1,17 @@
-test on mac - Safari x
+test on mac -
+Safari x
 Firefox x
 Chrome x
 Opera x
-test on windows - explorer
-Chrome
-Firefox
-Opera
+test on windows -
+Explorer
+  8 (!)
+  9
+  10
+  11
+Chrome x
+Firefox x
+Opera x
 test on iOS - Chrome
 Safari
 
@@ -17,6 +23,12 @@ watch crossbrowser testing course
 
 
 Troubles
+
+IE not showing fonts
+  possible solution
+    include EOT fonts
+
+IE doesn't show background icons properly
 
 chrome and firefox on mac different padding in catalogue buttons
     SOLVED
