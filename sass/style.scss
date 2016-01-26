@@ -27,41 +27,36 @@ Author: Mikhail Morshinin
 @import "base/ie8";
 
 /* Fonts */
-@include font-face("OpenSans-Regular", font-files(
-"opensans_regular/OpenSans-Regular-webfont.ttf",
-"opensans_regular/OpenSans-Regular-webfont.woff",
-"opensans_regular/OpenSans-Regular-webfont.svg"),
-"opensans_regular/OpenSans-Regular-webfont.eot");
-@include font-face("OpenSans-Light", font-files(
-"opensans_light/OpenSans-Light-webfont.ttf",
-"opensans_light/OpenSans-Light-webfont.woff",
-"opensans_light/OpenSans-Light-webfont.svg"),
-"opensans_light/OpenSans-Light-webfont.eot",
-300);
-@include font-face("OpenSans-Semibold", font-files(
-"opensans_semibold/OpenSans-Semibold-webfont.ttf",
-"opensans_semibold/OpenSans-Semibold-webfont.woff",
-"opensans_semibold/OpenSans-Semibold-webfont.svg"),
-"opensans_semibold/OpenSans-Semibold-webfont.eot",
-600);
-@include font-face("OpenSans-Bold", font-files(
-"opensans_bold/OpenSans-Bold-webfont.ttf",
-"opensans_bold/OpenSans-Bold-webfont.woff",
-"opensans_bold/OpenSans-Bold-webfont.svg"),
-"opensans_bold/OpenSans-Bold-webfont.eot",
-700);
-@include font-face("OpenSans-LightItalic", font-files(
-"opensans_lightitalic/OpenSans-LightItalic-webfont.ttf",
-"opensans_lightitalic/OpenSans-LightItalic-webfont.woff",
-"opensans_lightitalic/OpenSans-LightItalic-webfont.svg"),
-"opensans_lightitalic/OpenSans-LightItalic-webfont.eot",
-300, italic);
-@include font-face("OpenSans-ExtraBold", font-files(
-"opensans_extrabold/OpenSans-ExtraBold-webfont.ttf",
-"opensans_extrabold/OpenSans-ExtraBold-webfont.woff",
-"opensans_extrabold/OpenSans-ExtraBold-webfont.svg"),
-"opensans_extrabold/OpenSans-ExtraBold-webfont.eot",
-800);
+@include font-face('OpenSans-Regular', font-files(
+'opensans_regular/OpenSans-Regular-webfont.woff', woff,
+'opensans_regular/OpenSans-Regular-webfont.ttf', ttf,
+'opensans_regular/OpenSans-Regular-webfont.svg', svg),
+'opensans_regular/OpenSans-Regular-webfont.eot');
+@include font-face('OpenSans-Light', font-files(
+'opensans_light/OpenSans-Light-webfont.woff', woff,
+'opensans_light/OpenSans-Light-webfont.ttf', ttf,
+'opensans_light/OpenSans-Light-webfont.svg', svg),
+'opensans_light/OpenSans-Light-webfont.eot');
+@include font-face('OpenSans-Semibold', font-files(
+'opensans_semibold/OpenSans-Semibold-webfont.woff', woff,
+'opensans_semibold/OpenSans-Semibold-webfont.ttf', ttf,
+'opensans_semibold/OpenSans-Semibold-webfont.svg', svg),
+'opensans_semibold/OpenSans-Semibold-webfont.eot', bold);
+@include font-face('OpenSans-Bold', font-files(
+'opensans_bold/OpenSans-Bold-webfont.woff', woff,
+'opensans_bold/OpenSans-Bold-webfont.ttf', ttf,
+'opensans_bold/OpenSans-Bold-webfont.svg', svg),
+'opensans_bold/OpenSans-Bold-webfont.eot', bold);
+@include font-face('OpenSans-LightItalic', font-files(
+'opensans_lightitalic/OpenSans-LightItalic-webfont.woff', woff,
+'opensans_lightitalic/OpenSans-LightItalic-webfont.ttf', ttf,
+'opensans_lightitalic/OpenSans-LightItalic-webfont.svg', svg),
+'opensans_lightitalic/OpenSans-LightItalic-webfont.eot', italic);
+@include font-face('OpenSans-ExtraBold', font-files(
+'opensans_extrabold/OpenSans-ExtraBold-webfont.woff', woff,
+'opensans_extrabold/OpenSans-ExtraBold-webfont.ttf', ttf,
+'opensans_extrabold/OpenSans-ExtraBold-webfont.svg', svg),
+'opensans_extrabold/OpenSans-ExtraBold-webfont.eot', bold);
 
 /* Layout */
 @import "layout/nav";
