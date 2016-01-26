@@ -6,9 +6,10 @@ Opera x
 test on windows -
 Explorer
   8 (!)
-  9
-  10
-  11
+  9 x
+  10 x
+  11 x
+Edge x
 Chrome x
 Firefox x
 Opera x
@@ -25,9 +26,12 @@ watch crossbrowser testing course
 Troubles
 
 IE not showing fonts
-  included eot fonts for ie
+  SOLVED
+    included eot fonts for ie
 
 IE doesn't show background icons properly
+  SOLVED
+    bad fonts was the cause of the problem
 
 chrome and firefox on mac different padding in catalogue buttons
     SOLVED
