@@ -795,7 +795,7 @@ input[type="text"] {
   margin: 22px 0 0 27px;
   float: left;
 }
-.l-text-well h1 {
+.l-text-well h2 {
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -870,7 +870,6 @@ input[type="text"] {
   position: relative;
 }
 .l-catalogue li {
-  display: inline-block;
   width: 460px;
   float: left;
   margin-right: 20px;

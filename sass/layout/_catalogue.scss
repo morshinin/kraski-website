@@ -9,7 +9,6 @@
   margin-bottom: 36px;
   position: relative;
   li {
-    display: inline-block;
     @include span(6 of 12);    //  susy mixin for grid layout
     margin-bottom: 10px;
     &:last-child {
