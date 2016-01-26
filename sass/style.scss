@@ -41,22 +41,22 @@ Author: Mikhail Morshinin
 'opensans_semibold/OpenSans-Semibold-webfont.woff', woff,
 'opensans_semibold/OpenSans-Semibold-webfont.ttf', ttf,
 'opensans_semibold/OpenSans-Semibold-webfont.svg', svg),
-'opensans_semibold/OpenSans-Semibold-webfont.eot', bold);
+'opensans_semibold/OpenSans-Semibold-webfont.eot');
 @include font-face('OpenSans-Bold', font-files(
 'opensans_bold/OpenSans-Bold-webfont.woff', woff,
 'opensans_bold/OpenSans-Bold-webfont.ttf', ttf,
 'opensans_bold/OpenSans-Bold-webfont.svg', svg),
-'opensans_bold/OpenSans-Bold-webfont.eot', bold);
+'opensans_bold/OpenSans-Bold-webfont.eot');
 @include font-face('OpenSans-LightItalic', font-files(
 'opensans_lightitalic/OpenSans-LightItalic-webfont.woff', woff,
 'opensans_lightitalic/OpenSans-LightItalic-webfont.ttf', ttf,
 'opensans_lightitalic/OpenSans-LightItalic-webfont.svg', svg),
-'opensans_lightitalic/OpenSans-LightItalic-webfont.eot', italic);
+'opensans_lightitalic/OpenSans-LightItalic-webfont.eot');
 @include font-face('OpenSans-ExtraBold', font-files(
 'opensans_extrabold/OpenSans-ExtraBold-webfont.woff', woff,
 'opensans_extrabold/OpenSans-ExtraBold-webfont.ttf', ttf,
 'opensans_extrabold/OpenSans-ExtraBold-webfont.svg', svg),
-'opensans_extrabold/OpenSans-ExtraBold-webfont.eot', bold);
+'opensans_extrabold/OpenSans-ExtraBold-webfont.eot');
 
 /* Layout */
 @import "layout/nav";
